@@ -1,0 +1,64 @@
+.products-tracker {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 0;
+  border-top: 1px solid #eaecef;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
+  background-color: #fff;
+  z-index: 10;
+  font-size: 12px;
+
+  .container {
+    display: flex;
+    align-items: center;
+
+    .products-tracker-status {
+      font-size: 12px;
+      color: #7a8493;
+      margin-right: 50px;
+    }
+
+    .products-tracker-list {
+      align-items: center;
+      display: flex;
+      padding: 0;
+      margin: 0;
+
+      li {
+        text-align: center;
+        list-style: none;
+        display: block;
+
+        &:not(:last-child) {
+          margin-right: 25px;
+        }
+
+        > span {
+          display: block;
+          color: #7a8493;
+        }
+
+        &.products-tracker-more {
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .products-tracker-closer {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      line-height: 20px;
+      color: #7a8493;
+      cursor: pointer;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}

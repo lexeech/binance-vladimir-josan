@@ -1,0 +1,26 @@
+.toolbar {
+  padding: 5px 0;
+  display: flex;
+
+  .left-side {
+    white-space: nowrap;
+    align-items: center;
+    width: 100%;
+    display: flex;
+
+    > * {
+      margin-right: 15px;
+    }
+  }
+
+  .right-side {
+    white-space: nowrap;
+    align-items: center;
+    width: auto;
+    display: flex;
+
+    > * {
+      margin-left: 15px;
+    }
+  }
+}

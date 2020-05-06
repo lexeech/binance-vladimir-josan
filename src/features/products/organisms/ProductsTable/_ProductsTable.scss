@@ -1,0 +1,28 @@
+.products-table {
+  .pair-title {
+    svg {
+      vertical-align: -1.25px;
+      margin-right: 5px;
+    }
+
+    > span {
+      color: #1f2026;
+
+      &:last-child {
+        color: #7a8493;
+      }
+    }
+  }
+
+  .change-title {
+    color: #2d9468;
+
+    &.neutral {
+      color: #ccc;
+    }
+
+    &.negative {
+      color: #da304e;
+    }
+  }
+}

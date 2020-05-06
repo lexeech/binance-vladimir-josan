@@ -1,0 +1,43 @@
+.radio-wrapper {
+  &.radio-type-horizontal {
+    display: flex;
+  }
+
+  .radio-label {
+    cursor: pointer;
+    display: flex;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+
+    .radio-check {
+      position: relative;
+      margin-right: 5px;
+      border-radius: 50%;
+      border: 1px solid #87869e;
+      padding: 5px 8px;
+
+      &:after {
+        content: ' ';
+        display: block;
+        padding: 0;
+        background: #f1b90e;
+        transition: 0.2s;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    input[type='radio'] {
+      display: none;
+    }
+
+    input[type='radio']:checked ~ .radio-check:after {
+      padding: 5px;
+    }
+  }
+}

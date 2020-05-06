@@ -1,0 +1,21 @@
+.icon {
+  font-size: 18px;
+
+  path {
+    fill: #ccc;
+  }
+
+  &.icon-size-small {
+    font-size: 14px;
+  }
+
+  &.icon-size-large {
+    font-size: 24px;
+  }
+
+  .icon-star {
+    &.active path {
+      fill: #f0b90a;
+    }
+  }
+}

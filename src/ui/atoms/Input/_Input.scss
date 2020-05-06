@@ -1,0 +1,35 @@
+.input-wrapper {
+  position: relative;
+
+  &.input-wrapper-prefixed {
+    padding-left: 35px;
+
+    svg {
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .input-divider {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    background: #f1f2f5;
+    transition: 0.1s;
+  }
+
+  input {
+    outline: none;
+    border: 0;
+    background: transparent;
+    padding: 15px 0;
+
+    &:focus ~ .input-divider {
+      background: #f0b90b;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import './helpers';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  @include fontRegular;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 70px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include fontBold;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+}
+
+h1 {
+  font-size: 24px;
+  padding: 10px 0;
+}
+
+.container {
+  padding: 0 15px;
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+}

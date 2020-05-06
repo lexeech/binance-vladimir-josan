@@ -1,0 +1,13 @@
+.sort-item {
+  padding: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &:hover {
+    background: #fafafa;
+  }
+
+  &.active {
+    background: #f2f2f2;
+  }
+}
